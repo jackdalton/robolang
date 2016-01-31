@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style media="screen">
+    body {
+        margin: 0;
+    }
+    #editor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+    #canvas {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #button-container {
+        position: relative;
+    }
+    #play-button {
+        position: absolute;
+        z-index: 4;
+        right: 0;
+        top: 0;
+    }
+    </style>
+    <script src="js/parser.js"></script>
+</head>
+<body>
+    <div id="editor">// move &lt;up|down|left|right&gt; &lt;count&gt;
+// example: move right 3</div>
+    <div id="button-container">
+        <a id="play-button" href="javascript:init()"><i class="fa fa-play-circle fa-3x"></i></a>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="ace/ace.js"></script>
+    <script src="js/robolang.js"></script>
+</body>
+</html>
